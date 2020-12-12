@@ -156,22 +156,22 @@
 
 <h2 id="ex6"><mark>Задание 6. Работа с формами</mark></h2>
 <form>
-  <input type="text" placeholder="Фамилия">
-  <input type="text" placeholder="Имя">
-  <input type="text" placeholder="Отчество">
-  <input type="submit" value="ОК">
+  <input type="text" placeholder="Фамилия" required>
+  <input type="text" placeholder="Имя" required>
+  <input type="text" placeholder="Отчество" required>
+    <button>ОК</button>
 </form>
 <form>
- <p><input type="number" placeholder="Число"></p>
- <p> <input type="checkbox"> <span>Good </span>
-  <input type="submit" value="ОК"> </p>
+ <p><input type="number" placeholder="Число" required></p>
+ <p> <input type="checkbox" id="check"> <label for="check">Good </label>
+     <button>OK</button> </p>
 </form>
 
 <form>
   <h3>Форма регистрации</h3>
   <span>Пол: </span>
-  <input type="radio"><span>Мужской</span>
-  <input type="radio"><span>Женский</span>
+  <input type="radio" id="m"><label for="m">Мужской</label>
+  <input type="radio" id="w"><label for="w">Женский</label>
 <p>ФИО: <input type="text" placeholder="Фамилия" minlength="3" required>
   <input type="text" placeholder="Имя" minlength="3" required>
   <input type="text" placeholder="Отчество"></p>
@@ -196,8 +196,8 @@
   </p>
   <p> Введите пароль: <input type="password" required> </p><p> Повторите пароль: <input type="password" required>
   </p>
-  <p><input type="checkbox">Учусь платно </p>
-  <p><input type="button" value="Зарегистрироваться"></p>
+    <p><input type="checkbox" id="uch"><label for="uch"> Учусь платно</label> </p>
+    <p><button>Зарегистрироваться</button></p>
 </form>
 <hr size = "3" color="black">
 
